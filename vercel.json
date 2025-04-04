@@ -1,6 +1,6 @@
 {
   "buildCommand": "./build.sh",
   "outputDirectory": "portfolio_nextjs/.next",
-  "installCommand": "npm install --production=false",
+  "installCommand": "npm install",
   "framework": "nextjs"
 } 

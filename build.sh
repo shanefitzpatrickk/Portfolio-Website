@@ -16,9 +16,10 @@ ls -la
 echo "Checking app directory:"
 ls -la app || echo "App directory does not exist yet"
 
-# Install dependencies
+# Install dependencies including TypeScript and types
 echo "Installing dependencies..."
 npm install
+npm install --save-dev typescript @types/react @types/node @types/react-dom
 
 # Run the build script
 echo "Running build script..."
