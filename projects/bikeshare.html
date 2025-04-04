@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikeshare NYC Analysis - Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .project-hero {
+            height: 50vh;
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('../img/bikeshare-large.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .project-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .project-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .project-details {
+            padding: 4rem 0;
+        }
+        
+        .project-section {
+            margin-bottom: 3rem;
+        }
+        
+        .project-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+        
+        .project-section p {
+            margin-bottom: 1rem;
+        }
+        
+        .project-image {
+            margin: 2rem 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .code-block {
+            background-color: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+        
+        pre {
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.4;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+        }
+        
+        .tech-stack span {
+            background-color: var(--light-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>DataScientist</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#projects" class="active">Projects</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+                <div class="mode-toggle" id="mode-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="project-hero">
+        <div class="container">
+            <h1>Bikeshare NYC Analysis</h1>
+            <p>Optimizing sustainable transportation in New York City through data-driven insights</p>
+        </div>
+    </section>
+
+    <section class="project-details">
+        <div class="container">
+            <div class="project-header">
+                <h1>Bikeshare NYC Analysis (2015-2017)</h1>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Data Analysis</span>
+                    <span>Urban Mobility</span>
+                    <span>Visualization</span>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <div class="project-image">
+                    <img src="../img/bikeshare.jpg" alt="Bikeshare NYC Analysis">
+                </div>
+
+                <div class="project-description">
+                    <h2>Overview</h2>
+                    <p>An in-depth analysis of New York City's Citi Bike system from 2015 to 2017, exploring trends and usage patterns to provide insights into urban mobility and the evolving role of bikeshare systems in city transportation.</p>
+
+                    <h2>Objectives</h2>
+                    <ul>
+                        <li>Analyze growth in ridership and usage trends</li>
+                        <li>Identify peak usage times and popular routes</li>
+                        <li>Explore the impact of external factors on bikeshare patterns</li>
+                        <li>Present clear, visual insights for urban planning</li>
+                    </ul>
+
+                    <h2>Dataset Features</h2>
+                    <ul>
+                        <li>Trip duration and timing information</li>
+                        <li>Start and end station details</li>
+                        <li>Geographic coordinates</li>
+                        <li>User demographics (birth year, gender)</li>
+                        <li>User type (Customer vs Subscriber)</li>
+                    </ul>
+
+                    <h2>Key Insights</h2>
+                    <ul>
+                        <li>Analysis of trip patterns and duration</li>
+                        <li>Popular routes and stations identification</li>
+                        <li>User demographic analysis</li>
+                        <li>Temporal patterns in bike usage</li>
+                    </ul>
+
+                    <h2>Technologies Used</h2>
+                    <ul>
+                        <li>Python for data analysis</li>
+                        <li>Pandas for data manipulation</li>
+                        <li>Matplotlib/Seaborn for visualization</li>
+                        <li>Jupyter Notebooks for documentation</li>
+                    </ul>
+
+                    <h2>Impact</h2>
+                    <p>This analysis provides valuable insights into urban mobility patterns and the role of bikeshare systems in sustainable transportation. The findings contribute to the understanding of transportation patterns in major urban areas and can inform future urban planning decisions.</p>
+
+                    <h2>Data Source</h2>
+                    <p>Dataset sourced from Kaggle, originally from NYC Citi Bike's open data initiative.</p>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Research Questions</h2>
+                <p>The analysis focused on answering the following questions:</p>
+                <ol style="list-style-type: decimal; margin-left: 2rem;">
+                    <li>Can the number of rides throughout the year be explored from this data set?</li>
+                    <li>Does the age of riders impact the amount of time spent on rides?</li>
+                    <li>What are the differences in environmental contributions between different user types (Customer vs. Subscriber) in the bikeshare program?</li>
+                    <li>Are we able to accurately predict bike share demand in different areas using our data?</li>
+                </ol>
+            </div>
+
+            <div class="project-section">
+                <h2>Methodology</h2>
+                <p>The analysis employed various data science techniques, including:</p>
+                <ul style="list-style-type: disc; margin-left: 2rem;">
+                    <li>Exploratory data analysis to understand usage patterns</li>
+                    <li>Visualization of temporal trends using histograms</li>
+                    <li>Haversine formula to calculate distances between stations</li>
+                    <li>Statistical analysis to identify popular stations and routes</li>
+                </ul>
+                
+                <div class="code-block">
+                    <pre><code># Sample code for calculating distances between stations
+def haversine(lat1, lon1, lat2, lon2):
+    lat1_rad = np.radians(lat1)
+    lon1_rad = np.radians(lon1)
+    lat2_rad = np.radians(lat2)
+    lon2_rad = np.radians(lon2)
+
+    d_lat = lat2_rad - lat1_rad
+    d_lon = lon2_rad - lon1_rad
+    R = 6371000
+
+    a = np.sin(d_lat / 2)**2 + np.cos(lat1_rad) * np.cos(lat2_rad) * np.sin(d_lon / 2)**2
+    c = 2 * np.arcsin(np.sqrt(a))
+    distance = R * c
+    return distance
+
+bikeshare['distance(m)'] = haversine(bikeshare['Start Station Latitude'],
+                                    bikeshare['Start Station Longitude'],
+                                    bikeshare['End Station Latitude'],
+                                    bikeshare['End Station Longitude'])</code></pre>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Key Findings</h2>
+                <p>The analysis uncovered several important insights:</p>
+                <ul style="list-style-type: disc; margin-left: 2rem;">
+                    <li>Seasonal patterns in ridership with peaks during summer months</li>
+                    <li>Subscribers tend to take shorter, more consistent trips while Customers show higher variability in trip duration</li>
+                    <li>The most popular station for riders to commute to/from was Grove St PATH</li>
+                    <li>Clear patterns in demand allowed for predicting which stations would experience high traffic</li>
+                </ul>
+                
+                <div class="project-image">
+                    <img src="../img/bikeshare-chart.jpg" alt="Bikeshare Usage Chart">
+                    <p style="text-align: center; margin-top: 0.5rem; font-style: italic;">Daily Activity of Bikeshare Users Throughout 2 Years</p>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Conclusions</h2>
+                <p>The research provided valuable insights that can benefit the DoT in their efforts to promote eco-friendly transportation methods. By understanding demand patterns and user behavior, the Bikeshare program can be optimized to ensure proper bike availability at high-demand stations, ultimately making the service more convenient and attractive to users.</p>
+                <p>By ensuring the Bikeshare program is optimized and convenient, it will naturally gain popularity, effectively accomplishing the DoT's goal of promoting sustainable transportation.</p>
+            </div>
+
+            <a href="../index.html#projects" class="btn back-btn"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shane-fitzpatrick-68030b267/"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.freecodecamp.org/fcc31507940-bfc9-4a5a-9d80-bfefb3402374"><i class="fab fa-free-code-camp"></i></a>
+                </div>
+                <p>&copy; 2024 Data Science Portfolio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html> 
