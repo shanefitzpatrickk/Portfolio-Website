@@ -27,6 +27,8 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  // Set output to export static files
+  output: 'standalone',
 }
 
 module.exports = nextConfig; 

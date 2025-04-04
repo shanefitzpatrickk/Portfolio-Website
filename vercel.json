@@ -2,5 +2,11 @@
   "buildCommand": "./build.sh",
   "outputDirectory": "portfolio_nextjs/.next",
   "installCommand": "npm install",
-  "framework": "nextjs"
+  "framework": "nextjs",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/portfolio_nextjs/$1"
+    }
+  ]
 } 
