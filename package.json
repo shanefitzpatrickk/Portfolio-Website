@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd portfolio_nextjs && npm run dev",
+    "build": "cd portfolio_nextjs && npm run build",
+    "vercel-build": "cd portfolio_nextjs && npm install && npm run build",
+    "start": "cd portfolio_nextjs && npm run start",
+    "lint": "cd portfolio_nextjs && npm run lint"
+  },
+  "dependencies": {
+    "next": "14.2.0"
+  }
+} 

@@ -1,0 +1,7 @@
+{
+  "buildCommand": "./build.sh",
+  "outputDirectory": "portfolio_nextjs/.next",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/portfolio_nextjs/$1" }
+  ]
+} 
