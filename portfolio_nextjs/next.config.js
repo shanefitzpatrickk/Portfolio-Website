@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   // Enable experimental features
   experimental: {
-    // Removed turbo setting as it's causing a warning
+    // Empty experimental object, no turbo flag
   },
   // Ensure CSS imports work correctly
   sassOptions: {
