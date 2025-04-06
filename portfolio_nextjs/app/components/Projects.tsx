@@ -74,6 +74,7 @@ const Projects = () => {
               <span className="tech-tag">Statistical Modeling</span>
               <span className="tech-tag">Seaborn</span>
               <span className="tech-tag">R</span>
+              <span className="tech-tag">R Studio</span>
             </div>
             <a href="https://github.com/shanefitzpatrickk/Used-Car-Market-Analysis" className="btn" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i> View on GitHub
