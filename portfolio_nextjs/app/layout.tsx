@@ -1,5 +1,6 @@
 import './styles/globals.css';
 import type { Metadata } from 'next';
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: 'Shane Fitzpatrick - Portfolio',
@@ -19,7 +20,10 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 } 
