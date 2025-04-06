@@ -21,11 +21,8 @@ ls -la app || mkdir -p app
 # Fix the issue with the duplicate CSS files
 echo "Checking for duplicate CSS files..."
 if [ -d app/styles ] && [ -f app/styles/globals.css ]; then
-  echo "Found app/styles/globals.css - fixing the issue"
-  # Add Tailwind directives to the top of the styles/globals.css file
-  sed -i '1i@tailwind base;\n@tailwind components;\n@tailwind utilities;' app/styles/globals.css
-  # Alternatively, if we want to use only one globals.css file, uncomment the following line:
-  # rm -f app/styles/globals.css
+  echo "Found app/styles/globals.css - removing it to fix build issues"
+  rm -f app/styles/globals.css
 fi
 
 # Check if app/globals.css exists, otherwise create it
